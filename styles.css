@@ -80,11 +80,22 @@ html {
     cursor: pointer;
     opacity: 0.8;
     transition: opacity 0.3s ease;
+    /* Add these to ensure consistent centering */
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .hero-scroll-indicator:hover {
     opacity: 1;
 }
+
+/* Ensure the parent container is properly set up */
+.hero-container {
+    position: relative; /* Ensures the child (indicator) positions correctly */
+    width: 100%;       /* Matches the screen width */
+    overflow: hidden;  /* Avoids unexpected horizontal scrollbars */
+}
+
 
 /* Animations */
 @keyframes fadeInUp {
