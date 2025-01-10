@@ -75,15 +75,12 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hero-scroll-indicator i {
-    color: #fff; /* Adjust color if needed */
-  }
+    transform: translate(-50%, -50%); /* Adjusted to center vertically and horizontally */
+    animation: bounce 2s infinite;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
 
 .hero-scroll-indicator:hover {
     opacity: 1;
