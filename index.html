@@ -178,12 +178,19 @@
             <div class="col-md-8 text-center">
                 <h2 class="mb-4" data-aos="fade-up">Subscribe to Our Newsletter</h2>
                 <p class="mb-4" data-aos="fade-up" data-aos-delay="100">Stay updated with the latest marketing trends and insights.</p>
-                <form class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200" name="USER EMAIL" method="POST" data-netlify="true">
+                <form class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200" method="POST" data-netlify="true" name="email-submission">
                     <div class="input-group mb-3" style="max-width: 500px;">
-                        <input type="email" class="form-control" placeholder="Enter your email" aria-label="Email address">
+                        <input 
+                            type="email" 
+                            name="email" 
+                            class="form-control" 
+                            placeholder="Enter your email" 
+                            aria-label="Email address" 
+                            required>
                         <button class="btn btn-custom" type="submit">Subscribe</button>
                     </div>
                 </form>
+                
             </div>
         </div>
     </div>
