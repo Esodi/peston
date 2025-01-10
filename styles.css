@@ -73,9 +73,9 @@ html {
 /* Scroll indicator with improved animation */
 .hero-scroll-indicator {
     position: absolute;
-    top: 50%;
+    bottom: 30px;
     left: 50%;
-    transform: translate(-50%, -50%); /* Adjusted to center vertically and horizontally */
+    transform: translateX(-50%);
     animation: bounce 2s infinite;
     cursor: pointer;
     opacity: 0.8;
