@@ -202,26 +202,45 @@
         <h2 class="text-center mb-5" data-aos="fade-up">Get in Touch</h2>
         <div class="row">
             <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-                <form action="https://docs.google.com/forms/d/1zfUitSbppiOX5BJ-MNRLChaoWJA2Yx76nRU18IrCCrI/edit#responses" target="_blank">
+                <form method="POST" data-netlify="true" name="contact-form">
                     <div class="mb-3">
-                        <input type="text" class="form-control" placeholder="Your Name">
+                        <input 
+                            type="text" 
+                            name="name" 
+                            class="form-control" 
+                            placeholder="Your Name" 
+                            required>
                     </div>
                     <div class="mb-3">
-                        <input type="email" class="form-control" placeholder="Your Email">
+                        <input 
+                            type="email" 
+                            name="email" 
+                            class="form-control" 
+                            placeholder="Your Email" 
+                            required>
                     </div>
                     <div class="mb-3">
-                        <select class="form-select">
-                            <option selected>Select Service</option>
-                            <option>Digital Marketing</option>
-                            <option>Entertainment Marketing</option>
-                            <option>Real Estate Marketing</option>
+                        <select 
+                            name="service" 
+                            class="form-select" 
+                            required>
+                            <option value="" selected disabled>Select Service</option>
+                            <option value="Digital Marketing">Digital Marketing</option>
+                            <option value="Entertainment Marketing">Entertainment Marketing</option>
+                            <option value="Real Estate Marketing">Real Estate Marketing</option>
                         </select>
                     </div>
                     <div class="mb-3">
-                        <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        <textarea 
+                            name="message" 
+                            class="form-control" 
+                            rows="5" 
+                            placeholder="Your Message" 
+                            required></textarea>
                     </div>
                     <button type="submit" class="btn btn-custom">Send Message</button>
                 </form>
+                
             </div>
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="h-100 d-flex flex-column justify-content-between">
