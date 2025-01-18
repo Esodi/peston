@@ -28,14 +28,31 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="ourGroupDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Group
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="ourGroupDropdown">
+                            <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="impact.html">Impact</a></li>
+                            <li><a class="dropdown-item" href="division.html">Division</a></li>
+                            <li><a class="dropdown-item" href="information.html">Information</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="subsidiariesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Subsidiaries
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="subsidiariesDropdown">
+                            <li><a class="dropdown-item" href="peston-real-estate.html">Peston Real Estate</a></li>
+                            <li><a class="dropdown-item" href="peston-entertainment.html">Peston Entertainment</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="careers.html">Careers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="profile.html">Profile</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -45,11 +62,12 @@
                     </li>
                 </ul>
             </div>
+            
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
+       <!-- Hero Section -->
+       <section class="hero-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8" data-aos="fade-up">
@@ -58,14 +76,28 @@
                     <a href="https://wa.me/0613459527" target="_blank" rel="noopener noreferrer">
                         <button class="btn btn-custom btn-lg me-3">Get Started</button>
                     </a>
-                    <!-- <a href="PESTON ENTERTAINMENT COMPANY PROFILE.pdf" target="_blank" rel="noopener noreferrer">
-                        <button class="btn btn-outline-light btn-lg">Learn More</button>
-                    </a> -->
                 </div>
             </div>
         </div>
         <div class="hero-scroll-indicator">
             <i class="fas fa-chevron-down fa-2x"></i>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="b.png" alt="About Us" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h2 class="fw-bold mb-4">About Peston Group</h2>
+                    <p class="mb-4">At Peston Group, we are passionate about driving growth and innovation across industries. With a unique blend of expertise in entertainment, real estate, and digital marketing, we empower businesses to reach their full potential.</p>
+                    <p>Our team of experienced professionals works closely with clients to deliver tailored solutions that create lasting impact. From crafting compelling digital campaigns to delivering high-value real estate strategies, we’re here to make your vision a reality.</p>
+                    <a href="#services" class="btn btn-custom">Explore Our Services</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -108,20 +140,21 @@
         </div>
     </section>
 
+
    <!-- Stats Section -->
    <section class="stats-section">
     <div class="container">
         <div class="row text-center">
             <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up">
-                <h2 class="display-4 fw-bold">0+</h2>
+                <h2 class="display-4 fw-bold stat-number" data-target="500">0+</h2>
                 <p>Clients Served</p>
             </div>
             <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-                <h2 class="display-4 fw-bold">__%</h2>
+                <h2 class="display-4 fw-bold stat-number" data-target="98">0%</h2>
                 <p>Success Rate</p>
             </div>
             <div class="col-md-3 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">
-                <h2 class="display-4 fw-bold">8+</h2>
+                <h2 class="display-4 fw-bold stat-number" data-target="8">0+</h2>
                 <p>Years Experience</p>
             </div>
             <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
@@ -131,6 +164,7 @@
         </div>
     </div>
 </section>
+
 
 <!-- Testimonials Section -->
 <section class="testimonials py-5">
