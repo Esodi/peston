@@ -418,3 +418,10 @@ html {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
+
+body {
+    padding-top: 76px; /* Height of the fixed navbar */
+}
+#company-info {
+    margin-top: -1rem; /* Slight adjustment to remove extra space */
+}
