@@ -387,5 +387,34 @@ html {
       width: 100%;
     }
   }
-  
-  
+
+  #chairman-message {
+    position: relative;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    overflow: hidden;
+}
+#chairman-message::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: 
+        linear-gradient(45deg, transparent 20%, rgba(255,255,255,0.1) 25%, transparent 30%, rgba(255,255,255,0.1) 35%, transparent 40%, rgba(255,255,255,0.1) 45%, transparent 50%),
+        linear-gradient(-45deg, transparent 20%, rgba(255,255,255,0.1) 25%, transparent 30%, rgba(255,255,255,0.1) 35%, transparent 40%, rgba(255,255,255,0.1) 45%, transparent 50%);
+    background-size: 50px 50px;
+    transform: rotate(-45deg);
+    z-index: 1;
+    opacity: 0.3;
+}
+#chairman-message .container {
+    position: relative;
+    z-index: 2;
+}
+#chairman-message .chairman-message-content {
+    background: rgba(255,255,255,0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
