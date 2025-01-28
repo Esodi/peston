@@ -36,16 +36,51 @@ html {
 
 /* Hero Section */
 .hero-section {
-    background-image: url('3.webp');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Parallax effect */
     height: 100vh;
     display: flex;
     align-items: center;
     color: white;
     position: relative;
     overflow: hidden;
+}
+
+/* Video Background */
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire hero section */
+    z-index: -1; /* Places the video behind the content */
+}
+
+/* Container and Content */
+.hero-section .container {
+    position: relative;
+    z-index: 1; /* Ensures content is above the video */
+}
+
+/* Scroll Indicator */
+.hero-scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensures the indicator is above the video */
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-20px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-10px);
+    }
 }
 
 /* Text animations */
