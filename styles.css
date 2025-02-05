@@ -460,3 +460,51 @@ body {
 #company-info {
     margin-top: -1rem; /* Slight adjustment to remove extra space */
 }
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+    display: none;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+/* Add arrow to submenu items */
+.dropdown-submenu > a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #cccccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.ulist {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.ulist .list {
+    position: relative;
+    padding-left: 15px;
+}
+
+.ulist .list::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    background-color: #dc3545; /* Bootstrap's red color */
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
+}

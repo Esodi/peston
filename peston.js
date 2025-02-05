@@ -33,3 +33,32 @@ window.addEventListener('load', function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle nested dropdowns
+    document.querySelectorAll('.dropdown-submenu > a').forEach(function(element) {
+        element.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Close all other submenus
+            document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function(menu) {
+                if (menu !== e.target.nextElementSibling) {
+                    menu.style.display = 'none';
+                }
+            });
+            
+            // Toggle current submenu
+            const submenu = e.target.nextElementSibling;
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+    
+    // Close submenus when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown-submenu')) {
+            document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function(menu) {
+                menu.style.display = 'none';
+            });
+        }
+    });
+});
