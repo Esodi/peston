@@ -19,15 +19,17 @@
 }
 
 /* General styles */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap');
-
-body,
-h1, h2, h3, h4, h5, h6,
-p,
-button {
-    font-family: 'Orbitron', sans-serif !important;
-}
-
+body {
+    font-family: 'Quicksand', sans-serif; /* Use Quicksand for general text */
+    line-height: 1.6;
+    font-weight: 400; /* Default weight for body text */
+  }
+  
+  /* Apply Montserrat to headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for all headings */
+    font-weight: 600; /* Slightly bolder headings */
+  }
   
   /* For specific elements, you can add more customization */
   h1 {
