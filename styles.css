@@ -23,12 +23,35 @@ body {
     font-family: 'Quicksand', sans-serif; /* Use Quicksand for general text */
     line-height: 1.6;
     font-weight: 400; /* Default weight for body text */
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+nav {
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 9999px;
+}
+
+/* When the navbar is expanded on small screens, remove border radius */
+@media (max-width: 991.98px) {
+  nav:has(.navbar-collapse.show) {
+    border-radius: 0;
   }
-  
+}
+
+
+.wht {
+    color: white;
+  }
   /* Apply Montserrat to headings */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif; /* Use Montserrat for all headings */
     font-weight: 600; /* Slightly bolder headings */
+    color: #dc3545;
   }
   
   /* For specific elements, you can add more customization */
