@@ -18,6 +18,49 @@
     border-radius: 4px;
 }
 
+/* General styles */
+body {
+    font-family: 'Quicksand', sans-serif; /* Use Quicksand for general text */
+    line-height: 1.6;
+    font-weight: 400; /* Default weight for body text */
+  }
+  
+  /* Apply Montserrat to headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat for all headings */
+    font-weight: 600; /* Slightly bolder headings */
+  }
+  
+  /* For specific elements, you can add more customization */
+  h1 {
+    font-weight: 700; /* Boldest heading */
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  
+  p {
+    font-weight: 400; /* Normal weight for paragraphs */
+    font-size: 1rem;
+  }
+  
+  button {
+    font-family: 'Montserrat', sans-serif; /* Montserrat for buttons */
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
 /* Smooth Scroll */
 html {
     scroll-behavior: smooth;
