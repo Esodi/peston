@@ -74,3 +74,45 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const statsSection = document.getElementById('statsSection');
+    const statNumbers = statsSection.querySelectorAll('.stat-number');
+
+    function animateStats() {
+        statNumbers.forEach(stat => {
+            const targetText = stat.getAttribute('data-target');
+            // Remove '+' sign for calculation if present
+            let target = parseInt(targetText.replace('+',''));
+            const duration = 2000;
+            const startTime = performance.now();
+
+            function updateCount(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const currentCount = Math.floor(progress * target);
+                // Append '+' if the original target had one
+                stat.innerText = targetText.includes('+') ? currentCount + '+' : currentCount;
+                if (progress < 1) {
+                    requestAnimationFrame(updateCount);
+                }
+            }
+            requestAnimationFrame(updateCount);
+        });
+    }
+
+    // Use IntersectionObserver to animate stats every time section is in view
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Reset stats to zero before animation
+                statNumbers.forEach(stat => {
+                    stat.innerText = stat.getAttribute('data-target').includes('+') ? '0+' : '0';
+                });
+                animateStats();
+            }
+        });
+    }, { threshold: 0.5 });
+
+    observer.observe(statsSection);
+});

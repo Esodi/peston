@@ -34,6 +34,7 @@ nav {
     margin-left: 3%;
     margin-right: 3%;
     border-radius: 9999px;
+    border: #f3f3f3 solid 1px;
 }
 
 /* When the navbar is expanded on small screens, remove border radius */
