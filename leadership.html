@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Peston Group - Leading marketing agency specializing in entertainment, real estate, and digital marketing solutions.">
+        <title>Peston Group - Marketing Excellence</title>
+        
+        <!-- Favicon -->
+        <link rel="icon" href="favicon_io/i.png" type="image/x-icon">
+        <link rel="shortcut icon" href="favicon_io/i.png" type="image/x-icon">
+        
+        <!-- Stylesheets -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        
+        <style>
+            /* Decorative background elements */
+            body::before {
+                content: "";
+                position: fixed;
+                top: -50px;
+                right: -50px;
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                background-color: rgba(220, 53, 69, 0.1); /* Light red with low opacity */
+                z-index: -1;
+            }
+            
+            body::after {
+                content: "";
+                position: fixed;
+                bottom: -80px;
+                left: -80px;
+                width: 400px;
+                height: 400px;
+                border-radius: 50%;
+                background-color: rgba(220, 53, 69, 0.08); /* Light red with lower opacity */
+                z-index: -1;
+            }
+            
+            .bg-decoration {
+                position: fixed;
+                width: 250px;
+                height: 250px;
+                background-color: rgba(220, 53, 69, 0.05);
+                transform: rotate(45deg);
+                top: 40%;
+                right: 10%;
+                z-index: -1;
+            }
+        </style>
+    </head>
+    
+<body>
+    <!-- Loading Bar -->
+<div class="loading-bar"></div>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="peston_group.png" alt="Peston Group Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ourGroupDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Our Group
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="ourGroupDropdown">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Profile</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="chair.html">Chairman's Message</a></li>
+                                <li><a class="dropdown-item" href="dashboard.html#board-of-directors">Board of Directors</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Impact</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="dashboard.html#chairman-message">Our History</a></li>
+                                <li><a class="dropdown-item" href="dashboard.html#board-of-directors">Our Mission & Vision</a></li>
+                                <li><a class="dropdown-item" href="dashboard.html#board-of-directors">Our Core Values</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Division</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="dashboard.html#chairman-message">AGRIBUSINESS</a></li>
+                                <li><a class="dropdown-item" href="dashboard.html#board-of-directors">AGENCY & ENTERTAINMENT</a></li>
+                                <li><a class="dropdown-item" href="dashboard.html#board-of-directors">REAL ESTATE</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="subsidiariesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Subsidiaries
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="subsidiariesDropdown">
+                        <li><a class="dropdown-item" href="pre.html">Peston Real Estate Limited</a></li>
+                        <li><a class="dropdown-item" href="pe.html">Peston Entertainment Limited</a></li>
+                        <li><a class="dropdown-item" href="pa.html">Peston Enterprises Limited</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="subsidiariesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our People</a>
+                    <ul class="dropdown-menu" aria-labelledby="subsidiariesDropdown">
+                        <li><a class="dropdown-item" href="pre.html">Careers</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-custom ms-3" href="login.html">Client Portal</a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</nav>
+
+    <!-- Executive Leadership Section -->
+<section class="testimonials py-5">
+    <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">Executive Leadership</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 p-4 clickable-card" role="button" style="cursor:pointer;" data-person-id="petro" data-bs-toggle="modal" data-bs-target="#personModal">
+                    <div class="text-center mb-3">
+                        <h5>Petro Nkya</h5>
+                        <p class="text-muted">Chairman</p>
+                        <div class="social-links mt-2">
+                            <a href="#" class="btn btn-custom social-icon me-2" aria-label="X (formerly Twitter)">
+                                <i class="fab fa-x"></i>
+                            </a>
+                            <a href="#" class="btn btn-custom social-icon me-2" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="mailto:petronk@pestongroup.com" class="btn btn-custom social-icon" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-center">"Leading Peston Group with a vision for innovation and excellence."</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100 p-4 clickable-card" role="button" style="cursor:pointer;" data-person-id="lucy" data-bs-toggle="modal" data-bs-target="#personModal">
+                    <div class="text-center mb-3">
+                        <h5>Lucy Nkya</h5>
+                        <p class="text-muted">Director</p>
+                        <div class="social-links mt-2">
+                            <a href="#" class="btn btn-custom social-icon me-2" aria-label="X (formerly Twitter)">
+                                <i class="fab fa-x"></i>
+                            </a>
+                            <a href="#" class="btn btn-custom social-icon me-2" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="mailto:lucy@pestongroup.com" class="btn btn-custom social-icon" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-center">"Driving marketing strategies that deliver exceptional results."</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100 p-4 clickable-card" role="button" style="cursor:pointer;" data-person-id="zakia" data-bs-toggle="modal" data-bs-target="#personModal">
+                    <div class="text-center mb-3">
+                        <h5>Zakia Omar Ally</h5>
+                        <p class="text-muted">Company Secretary</p>
+                        <div class="social-links mt-2">
+                            <a href="#" class="btn btn-custom social-icon me-2" aria-label="X (formerly Twitter)">
+                                <i class="fab fa-x"></i>
+                            </a>
+                            <a href="#" class="btn btn-custom social-icon me-2" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="mailto:lucy@pestongroup.com" class="btn btn-custom social-icon" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-center">"Creating unforgettable events with strategic marketing."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal Template -->
+<div class="modal fade" id="personModal" tabindex="-1" aria-labelledby="personModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="personModalLabel">Person Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="personDetails"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const personDetails = {
+            petro: {
+                name: "Petro Nkya",
+                title: "Chairman",
+                description: "Petro Nkya is the visionary Chairman of Peston Group. With humble beginnings and a passion for business, Petro established Peston Group in 2016, leading it to become a diversified and innovative conglomerate. His commitment to excellence and sustainable growth has guided the company’s expansion into industries such as agribusiness, real estate, marketing, and entertainment. Petro leadership is defined by his focus on making a lasting impact and creating value across all sectors in which Peston Group operates.",
+                social: {
+                    twitter: "#",
+                    instagram: "#",
+                    email: "mailto:petronk@pestongroup.com"
+                }
+            },
+            lucy: {
+                name: "Lucy Nkya",
+                title: "Director and Co-Founder",
+                description: "Lucy Nkya, Director of Peston Group, brings over 50 years of distinguished experience in both the private and public sectors. She is a well-known philanthropist and serves as the Chief Strategic Advisor to the Group. Her strategic insight and business acumen have played a key role in the company’s success, guiding Peston Group’s mission to create value and make a lasting positive impact in every sector it touches.",
+                social: {
+                    twitter: "#",
+                    instagram: "#",
+                    email: "mailto:lucy@pestongroup.com"
+                }
+            },
+            zakia: {
+                name: "Zakia Omar Ally",
+                title: "Company Secretary",
+                description: "Zakia Omar Ally joined Peston Group in 2022 as the Company Secretary. As the gatekeeper of the Board, Zakia plays a crucial role in managing corporate governance, overseeing board functions, and ensuring smooth operations. Her administrative expertise and organizational skills support the Board in executing its responsibilities effectively.",
+                social: {
+                    twitter: "#",
+                    instagram: "#",
+                    email: "mailto:zakia@pestongroup.com"
+                }
+            }
+        };
+
+        document.querySelectorAll('.clickable-card[data-bs-toggle="modal"]').forEach(card => {
+            card.addEventListener('click', function () {
+                const personId = this.getAttribute('data-person-id');
+                const person = personDetails[personId];
+                if (person) {
+                    document.getElementById('personModalLabel').innerText = person.name;
+                    document.getElementById('personDetails').innerHTML = `
+                        <p><strong>Title:</strong> ${person.title}</p>
+                        <p>${person.description}</p>
+                        <div class="social-links mt-2">
+                            <a href="${person.social.twitter}" class="social-icon me-2" aria-label="X (formerly Twitter)">
+                                <i class="fab fa-x"></i>
+                            </a>
+                            <a href="${person.social.instagram}" class="social-icon me-2" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="${person.social.email}" class="social-icon" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    `;
+                }
+            });
+        });
+    });
+</script>
+
+    <!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="mb-3">About Peston Group</h5>
+                <p>Peston Group, founded by Petro Estomih Nkya in 2016, began as a small agribusiness trading house with Peston Enterprises Limited as its flagship. From these humble beginnings, we’ve rapidly expanded into diverse sectors, building a dynamic group known for excellence and innovation.</p>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="mb-3">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#services" class="text-white">Services</a></li>
+                    <li><a href="#about" class="text-white">About</a></li>
+                    <li><a href="#careers" class="text-white">Careers</a></li>
+                    <li><a href="#contact" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5 class="mb-3">Newsletter</h5>
+                <p>Subscribe to our newsletter for updates and insights.</p>
+                <form class="mt-3" method="POST" data-netlify="true" name="newsletter-subscription">
+                    <div class="input-group">
+                        <input 
+                            type="email" 
+                            name="email" 
+                            class="form-control" 
+                            placeholder="Your email" 
+                            required>
+                        <button class="btn btn-custom" type="submit">Subscribe</button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+        <hr class="mt-4 bg-light">
+        <div class="text-center mt-4">
+            <p>&copy; 2025 Peston Group. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Floating Chat Button -->
+<a href="https://wa.me/0613459527" target="_blank" rel="noopener noreferrer">
+    <div class="floating-chat">
+        <i class="fas fa-comments fa-lg"></i>
+    </div>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+<script src="peston.js"></script>

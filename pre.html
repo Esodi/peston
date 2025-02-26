@@ -15,6 +15,43 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
+        <style>
+            /* Decorative background elements */
+            body::before {
+                content: "";
+                position: fixed;
+                top: -50px;
+                right: -50px;
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;
+                background-color: rgba(220, 53, 69, 0.1); /* Light red with low opacity */
+                z-index: -1;
+            }
+            
+            body::after {
+                content: "";
+                position: fixed;
+                bottom: -80px;
+                left: -80px;
+                width: 400px;
+                height: 400px;
+                border-radius: 50%;
+                background-color: rgba(220, 53, 69, 0.08); /* Light red with lower opacity */
+                z-index: -1;
+            }
+            
+            .bg-decoration {
+                position: fixed;
+                width: 250px;
+                height: 250px;
+                background-color: rgba(220, 53, 69, 0.05);
+                transform: rotate(45deg);
+                top: 40%;
+                right: 10%;
+                z-index: -1;
+            }
+        </style>
     </head>
     
 <body>
@@ -96,7 +133,19 @@
         
     </div>
 </nav>
-
+<!-- Top Banner Image Placeholder -->
+<section id="header-banner" class="mt-5 pt-5">
+    <div class="banner-container" style="background-image: url('3d-house-model-with-modern-architecture.jpg'); 
+         background-size: cover; background-position: center; background-attachment: fixed;
+         height: 500px; position: relative; width: 100%;">
+        <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+             background-color: rgba(0, 0, 0, 0.4); display: flex; align-items: center; justify-content: center;">
+            <h1 style="color: white; font-size: 3.5rem; font-weight: 700; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                PESTON REAL ESTATE
+            </h1>
+        </div>
+    </div>
+</section>
 <!-- Company Profile Section -->
 <section id="company-profile" class="py-5">
     <div class="container">

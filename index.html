@@ -45,15 +45,15 @@
                             <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Profile</a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="chair.html">Chairman's Message</a></li>
-                                <li><a class="dropdown-item" href="dashboard.html#board-of-directors">Board of Directors</a></li>
+                                <li><a class="dropdown-item" href="leadership.html">Board of Directors</a></li>
                             </ul>
                         </li>
                         <li class="dropdown-submenu">
                             <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Impact</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="dashboard.html#chairman-message">Our History</a></li>
-                                <li><a class="dropdown-item" href="dashboard.html#board-of-directors">Our Mission & Vision</a></li>
-                                <li><a class="dropdown-item" href="dashboard.html#board-of-directors">Our Core Values</a></li>
+                                <li><a class="dropdown-item" href="ourgroup.html">Our History</a></li>
+                                <li><a class="dropdown-item" href="ourgroup.html">Our Mission & Vision</a></li>
+                                <li><a class="dropdown-item" href="ourgroup.html">Our Core Values</a></li>
                             </ul>
                         </li>
                         <li class="dropdown-submenu">
@@ -85,12 +85,8 @@
                         <li><a class="dropdown-item" href="pre.html">Careers</a></li>
                     </ul>
                 </li>
-                
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-custom ms-3" href="login.html">Client Portal</a>
+                    <a class="nav-link btn btn-custom ms-3" href="#contact">Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -143,10 +139,35 @@
 
     <!-- Services Section -->
     <section id="services" class="py-5">
+        <style>
+            .vertical-divider {
+                border-left: 2px solid #dc3545;
+                height: 100%;
+            }
+            .pic1 {
+                background-image: url('photorealistic-view-african-people-harvesting-vegetables-grains.jpg');
+            }
+            .pic2 {
+                background-image: url('male-photographer-exploring-urban-environment-with-grunge-aesthetic.jpg');
+            }
+            .pic3 {
+                background-image: url('3d-house-model-with-modern-architecture.jpg');
+            }
+            .explanation-bg {
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                padding: 20px;
+                color: #fff;
+                min-height: 400px;
+            }
+        </style>
         <div class="container">
-            <h2 class="text-center mb-5" data-aos="fade-up">Our Subsidiaries</h2>
-            <div class="row g-4">
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="text-center mb-5" data-aos="fade-up">Peston Group's Divisions</h2>
+            
+            <!-- Agribusiness Division -->
+            <div class="row align-items-center mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-md-4">
                     <div class="card service-card h-100">
                         <div class="card-body text-center">
                             <i class="fas fa-seedling fa-3x text-danger mb-3"></i>
@@ -156,7 +177,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-1 d-none d-md-flex align-items-stretch justify-content-center">
+                    <div class="vertical-divider"></div>
+                </div>
+                <div class="col-md-7 explanation-bg pic1">
+                    <p>
+                    Our Agribusiness division leverages sustainable practices and innovative strategies to drive agricultural trading and support rural development, empowering local communities.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Agency & Entertainment Division -->
+            <div class="row align-items-center mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-4">
                     <div class="card service-card h-100">
                         <div class="card-body text-center">
                             <i class="fas fa-theater-masks fa-3x text-danger mb-3"></i>
@@ -166,7 +199,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-md-1 d-none d-md-flex align-items-stretch justify-content-center">
+                    <div class="vertical-divider"></div>
+                </div>
+                <div class="col-md-7 explanation-bg pic2">
+                    <p>
+                    This division focuses on dynamic content creation, event production, and innovative marketing strategies to engage and inspire audiences across multiple platforms.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Real Estate Division -->
+            <div class="row align-items-center mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-md-4">
                     <div class="card service-card h-100">
                         <div class="card-body text-center">
                             <i class="fas fa-home fa-3x text-danger mb-3"></i>
@@ -175,6 +220,14 @@
                             <a href="pre.html" class="btn btn-custom mt-3">Learn More</a>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-1 d-none d-md-flex align-items-stretch justify-content-center">
+                    <div class="vertical-divider"></div>
+                </div>
+                <div class="col-md-7 explanation-bg pic3">
+                    <p>
+                    Our Real Estate division is dedicated to developing and managing innovative property solutions, ensuring quality and excellence in every project from conception to completion.
+                    </p>
                 </div>
             </div>
         </div>
@@ -213,168 +266,6 @@
     </div>
 </section>
 
-
-<!-- Executive Leadership Section -->
-<section class="testimonials py-5">
-    <div class="container">
-        <h2 class="text-center mb-5" data-aos="fade-up">Executive Leadership</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                <div class="card h-100 p-4" data-person-id="petro">
-                    <div class="text-center mb-3">
-                        <h5>Petro Nkya</h5>
-                        <p class="text-muted">Chairman and Founder</p>
-                        <div class="social-links mt-2">
-                            <a href="#" class="social-icon me-2" aria-label="X (formerly Twitter)">
-                                <i class="fab fa-x"></i>
-                            </a>
-                            <a href="#" class="social-icon me-2" aria-label="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="mailto:petronk@pestongroup.com" class="social-icon" aria-label="Email">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="text-center">"Leading Peston Group with a vision for innovation and excellence."</p>
-                    <button class="btn btn-custom mt-3" data-bs-toggle="modal" data-bs-target="#personModal" data-person-id="petro">View Details</button>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card h-100 p-4" data-person-id="lucy">
-                    <div class="text-center mb-3">
-                        <h5>Lucy Nkya</h5>
-                        <p class="text-muted">Director and Co-Founder</p>
-                        <div class="social-links mt-2">
-                            <a href="#" class="social-icon me-2" aria-label="X (formerly Twitter)">
-                                <i class="fab fa-x"></i>
-                            </a>
-                            <a href="#" class="social-icon me-2" aria-label="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="mailto:lucy@pestongroup.com" class="social-icon" aria-label="Email">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="text-center">"Driving marketing strategies that deliver exceptional results."</p>
-                    <button class="btn btn-custom mt-3" data-bs-toggle="modal" data-bs-target="#personModal" data-person-id="lucy">View Details</button>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="card h-100 p-4" data-person-id="zakia">
-                    <div class="text-center mb-3">
-                        <h5>Zakia Omar Ally</h5>
-                        <p class="text-muted">Company Secretary</p>
-                        <div class="social-links mt-2">
-                            <a href="#" class="social-icon me-2" aria-label="X (formerly Twitter)">
-                                <i class="fab fa-x"></i>
-                            </a>
-                            <a href="#" class="social-icon me-2" aria-label="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="mailto:zakia@pestongroup.com" class="social-icon" aria-label="Email">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="text-center">"Creating unforgettable events with strategic marketing."</p>
-                    <button class="btn btn-custom mt-3" data-bs-toggle="modal" data-bs-target="#personModal" data-person-id="zakia">View Details</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<style>
-    .card:hover {
-        transform: scale(1.05);
-        transition: transform 0.3s ease;
-    }
-    .social-icon {
-        color: #dc3545; /* Red-like color */
-    }
-    .social-icon:hover {
-        color: #a71d2a; /* Darker red-like color */
-    }
-</style>
-<!-- Modal Template -->
-<div class="modal fade" id="personModal" tabindex="-1" aria-labelledby="personModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="personModalLabel">Person Details</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div id="personDetails"></div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const personDetails = {
-            petro: {
-                name: "Petro Nkya",
-                title: "Chairman and Founder",
-                description: "Petro Nkya is the visionary Founder and Chairman of Peston Group. With humble beginnings and a passion for business, Petro established Peston Group in 2016, leading it to become a diversified and innovative conglomerate. His commitment to excellence and sustainable growth has guided the company’s expansion into industries such as agribusiness, real estate, marketing, and entertainment. Petro leadership is defined by his focus on making a lasting impact and creating value across all sectors in which Peston Group operates.",
-                social: {
-                    twitter: "#",
-                    instagram: "#",
-                    email: "mailto:petronk@pestongroup.com"
-                }
-            },
-            lucy: {
-                name: "Lucy Nkya",
-                title: "Director and Co-Founder",
-                description: "Lucy Nkya, Co-Founder and Director of Peston Group, brings over 50 years of distinguished experience in both the private and public sectors. She is a well-known philanthropist and serves as the Chief Strategic Advisor to the Group. Her strategic insight and business acumen have played a key role in the company’s success, guiding Peston Group’s mission to create value and make a lasting positive impact in every sector it touches.",
-                social: {
-                    twitter: "#",
-                    instagram: "#",
-                    email: "mailto:lucy@pestongroup.com"
-                }
-            },
-            zakia: {
-                name: "Zakia Omar Ally",
-                title: "Company Secretary",
-                description: "Zakia Omar Ally joined Peston Group in 2022 as the Company Secretary. As the gatekeeper of the Board, Zakia plays a crucial role in managing corporate governance, overseeing board functions, and ensuring smooth operations. Her administrative expertise and organizational skills support the Board in executing its responsibilities effectively.",
-                social: {
-                    twitter: "#",
-                    instagram: "#",
-                    email: "mailto:zakia@pestongroup.com"
-                }
-            }
-        };
-
-        document.querySelectorAll('.btn[data-bs-toggle="modal"]').forEach(button => {
-            button.addEventListener('click', function () {
-                const personId = this.getAttribute('data-person-id');
-                const person = personDetails[personId];
-                if (person) {
-                    document.getElementById('personModalLabel').innerText = person.name;
-                    document.getElementById('personDetails').innerHTML = `
-                        <p><strong>Title:</strong> ${person.title}</p>
-                        <p>${person.description}</p>
-                        <div class="social-links mt-2">
-                            <a href="${person.social.twitter}" class="social-icon me-2" aria-label="X (formerly Twitter)">
-                                <i class="fab fa-x"></i>
-                            </a>
-                            <a href="${person.social.instagram}" class="social-icon me-2" aria-label="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="${person.social.email}" class="social-icon" aria-label="Email">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </div>
-                    `;
-                }
-            });
-        });
-    });
-</script>
-
 <!-- Newsletter Section -->
 <section class="newsletter bg-light py-5">
     <div class="container">
@@ -406,45 +297,48 @@
         <h2 class="text-center mb-5" data-aos="fade-up">Get in Touch</h2>
         <div class="row">
             <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
-                <form method="POST" data-netlify="true" name="contact-form">
-                    <div class="mb-3">
-                        <input 
-                            type="text" 
-                            name="name" 
-                            class="form-control" 
-                            placeholder="Your Name" 
-                            required>
+                <div class="card h-100">
+                    <div class="card-body">
+                        <form method="POST" data-netlify="true" name="contact-form">
+                            <div class="mb-3">
+                                <input 
+                                    type="text" 
+                                    name="name" 
+                                    class="form-control" 
+                                    placeholder="Your Name" 
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <input 
+                                    type="email" 
+                                    name="email" 
+                                    class="form-control" 
+                                    placeholder="Your Email" 
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <select
+                                    name="service" 
+                                    class="form-select" 
+                                    required>
+                                    <option value="" selected disabled>Select Service</option>
+                                    <option value="Digital Marketing">Digital Marketing</option>
+                                    <option value="Entertainment Marketing">Entertainment Marketing</option>
+                                    <option value="Real Estate Marketing">Real Estate Marketing</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <textarea 
+                                    name="message" 
+                                    class="form-control" 
+                                    rows="5" 
+                                    placeholder="Your Message" 
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-custom">Send Message</button>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                        <input 
-                            type="email" 
-                            name="email" 
-                            class="form-control" 
-                            placeholder="Your Email" 
-                            required>
-                    </div>
-                    <div class="mb-3">
-                        <select
-                            name="service" 
-                            class="form-select" 
-                            required>
-                            <option value="" selected disabled>Select Service</option>
-                            <option value="Digital Marketing">Digital Marketing</option>
-                            <option value="Entertainment Marketing">Entertainment Marketing</option>
-                            <option value="Real Estate Marketing">Real Estate Marketing</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <textarea 
-                            name="message" 
-                            class="form-control" 
-                            rows="5" 
-                            placeholder="Your Message" 
-                            required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-custom">Send Message</button>
-                </form>
-                
+                </div>
             </div>
             <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
                 <div class="card h-100">
@@ -460,12 +354,12 @@
                                 <p><i class="fas fa-phone me-2"></i> +255 746 886 964 / +255 753 740 591</p>
                                 <p><i class="fas fa-envelope me-2"></i> info@pestongroup.com</p>
                             </div>
-                            <div class="mb-4">
+                            <!-- <div class="mb-4">
                                 <h5 class="mb-3">Business Hours</h5>
                                 <p>Monday - Friday: 9:00 AM - 5:30 PM</p>
                                 <p>Saturday: 10:00 AM - 2:00 PM</p>
                                 <p>Sunday: Closed</p>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="social-links mt-4">
                             <a href="#" class="social-icon me-3" aria-label="Facebook">
@@ -525,7 +419,7 @@
         <div class="row">
             <div class="col-md-4 mb-4 mb-md-0">
                 <h5 class="mb-3">About Peston Group</h5>
-                <p>Leading marketing agency combining expertise in entertainment and real estate to deliver exceptional results for our clients.</p>
+                <p>Peston Group, founded by Petro Estomih Nkya in 2016, began as a small agribusiness trading house with Peston Enterprises Limited as its flagship. From these humble beginnings, we’ve rapidly expanded into diverse sectors, building a dynamic group known for excellence and innovation.</p>
             </div>
             <div class="col-md-4 mb-4 mb-md-0">
                 <h5 class="mb-3">Quick Links</h5>
