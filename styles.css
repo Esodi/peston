@@ -564,7 +564,7 @@ body {
     box-shadow: 0 0 5px rgba(220, 53, 69, 0.5);
 }
 #contact {
-    background-image: url('dar.jpg');
+    background-image: url('dar.webp');
     background-size: 100%; /* Adjust percentage for desired zoom-out effect */
     background-repeat: no-repeat;
     background-position: center;
